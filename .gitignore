@@ -1,0 +1,16 @@
+.idea
+*.swp
+*.swo
+# System Cache Files
+/system/cache/*
+!/system/cache/index.html
+
+# Image Cache Files
+/image/cache/*
+!/image/cache/index.html
+
+# Log Files
+/system/logs/*
+!/system/logs/index.html
+
+catalog/view/theme/default/stylesheet/.sass-cache/*
