@@ -39,9 +39,17 @@
     <?php if ($logged) { ?>
     <a type="button" id="button-menu" class="pull-left"><i class="fa fa-indent fa-lg"></i></a>
     <?php } ?>
-    <a href="<?php echo $home; ?>" class="navbar-brand"><img src="view/image/logo.png" alt="<?php echo $heading_title; ?>" title="<?php echo $heading_title; ?>" /></a></div>
+    <a href="<?php echo $home; ?>" class="navbar-brand">
+        Ticket Management System
+            <!--
+        <img src="view/image/logo.png" alt="<?php echo $heading_title; ?>" title="<?php echo $heading_title; ?>" />
+            -->
+    </a></div>
   <?php if ($logged) { ?>
   <ul class="nav pull-right">
+    <li>User:<span></span></li>
+    <li>Login time:<span></span></li>
+      <!--
     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"><span class="label label-danger pull-left"><?php echo $alerts; ?></span> <i class="fa fa-bell fa-lg"></i></a>
       <ul class="dropdown-menu dropdown-menu-right alerts-dropdown">
         <li class="dropdown-header"><?php echo $text_order; ?></li>
@@ -74,6 +82,7 @@
         <li><a href="http://forum.opencart.com" target="_blank"><?php echo $text_support; ?></a></li>
       </ul>
     </li>
+      -->
     <li><a href="<?php echo $logout; ?>"><span class="hidden-xs hidden-sm hidden-md"><?php echo $text_logout; ?></span> <i class="fa fa-sign-out fa-lg"></i></a></li>
   </ul>
   <?php } ?>

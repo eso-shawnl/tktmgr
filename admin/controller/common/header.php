@@ -44,11 +44,11 @@ class ControllerCommonHeader extends Controller {
 		if (!isset($this->request->get['token']) || !isset($this->session->data['token']) || ($this->request->get['token'] != $this->session->data['token'])) {
 			$data['logged'] = '';
 
-			$data['home'] = $this->url->link('common/dashboard', '', 'SSL');
+			$data['home'] = $this->url->link('ticket/manager', '', 'SSL');
 		} else {
 			$data['logged'] = true;
 
-			$data['home'] = $this->url->link('common/dashboard', 'token=' . $this->session->data['token'], 'SSL');
+			$data['home'] = $this->url->link('ticket/manager', 'token=' . $this->session->data['token'], 'SSL');
 			$data['logout'] = $this->url->link('common/logout', 'token=' . $this->session->data['token'], 'SSL');
 
 			// Orders
