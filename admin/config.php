@@ -1,25 +1,25 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://localhost/opencart/admin/');
-define('HTTP_CATALOG', 'http://localhost/opencart/');
+define('HTTP_SERVER', 'http://localhost/tktmgr/admin/');
+define('HTTP_CATALOG', 'http://localhost/tktmgr/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://localhost/opencart/admin/');
-define('HTTPS_CATALOG', 'http://localhost/opencart/');
+define('HTTPS_SERVER', 'http://localhost/tktmgr/admin/');
+define('HTTPS_CATALOG', 'http://localhost/tktmgr/');
 
 // DIR
-define('DIR_APPLICATION', '/Users/xlin/Sites/opencart/admin/');
-define('DIR_SYSTEM', '/Users/xlin/Sites/opencart/system/');
-define('DIR_LANGUAGE', '/Users/xlin/Sites/opencart/admin/language/');
-define('DIR_TEMPLATE', '/Users/xlin/Sites/opencart/admin/view/template/');
-define('DIR_CONFIG', '/Users/xlin/Sites/opencart/system/config/');
-define('DIR_IMAGE', '/Users/xlin/Sites/opencart/image/');
-define('DIR_CACHE', '/Users/xlin/Sites/opencart/system/cache/');
-define('DIR_DOWNLOAD', '/Users/xlin/Sites/opencart/system/download/');
-define('DIR_UPLOAD', '/Users/xlin/Sites/opencart/system/upload/');
-define('DIR_LOGS', '/Users/xlin/Sites/opencart/system/logs/');
-define('DIR_MODIFICATION', '/Users/xlin/Sites/opencart/system/modification/');
-define('DIR_CATALOG', '/Users/xlin/Sites/opencart/catalog/');
+define('DIR_APPLICATION', '/Users/xlin/Sites/tktmgr/admin/');
+define('DIR_SYSTEM', '/Users/xlin/Sites/tktmgr/system/');
+define('DIR_LANGUAGE', '/Users/xlin/Sites/tktmgr/admin/language/');
+define('DIR_TEMPLATE', '/Users/xlin/Sites/tktmgr/admin/view/template/');
+define('DIR_CONFIG', '/Users/xlin/Sites/tktmgr/system/config/');
+define('DIR_IMAGE', '/Users/xlin/Sites/tktmgr/image/');
+define('DIR_CACHE', '/Users/xlin/Sites/tktmgr/system/cache/');
+define('DIR_DOWNLOAD', '/Users/xlin/Sites/tktmgr/system/download/');
+define('DIR_UPLOAD', '/Users/xlin/Sites/tktmgr/system/upload/');
+define('DIR_LOGS', '/Users/xlin/Sites/tktmgr/system/logs/');
+define('DIR_MODIFICATION', '/Users/xlin/Sites/tktmgr/system/modification/');
+define('DIR_CATALOG', '/Users/xlin/Sites/tktmgr/catalog/');
 
 // DB
 define('DB_DRIVER', 'mysqli');
