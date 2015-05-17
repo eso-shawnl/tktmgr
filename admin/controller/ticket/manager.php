@@ -29,6 +29,7 @@ class ControllerTicketManager extends Controller {
                 //Just data for placeholder
                 $data['orders'] = array(
                     array(
+                        'id'        =>  '21042',
                         'number'    =>  '100001',
                         'username'  =>  'peter001',
                         'name'      =>  'Peter Chrystall',
@@ -43,6 +44,7 @@ class ControllerTicketManager extends Controller {
                         'total'         =>  '1200.00'
                     ),
                     array(
+                        'id'        =>  '14332',
                         'number'    =>  '100003',
                         'username'  =>  'helen001',
                         'name'      =>  'Helen Swift',
@@ -56,7 +58,36 @@ class ControllerTicketManager extends Controller {
                         'C'         =>  '1',
                         'total'         =>  '2300.00'
                     ),
-                    
+                    array(
+                        'id'        =>  '21047',
+                        'number'    =>  '100007',
+                        'username'  =>  'peter001',
+                        'name'      =>  'Peter Chrystall',
+                        'email'     =>  'peter@test.com',
+                        'phone'     =>  '10001',
+                        'VVIP'      =>  '2',
+                        'VIP'       =>  '1',
+                        'Couple'    =>  '0',
+                        'A'         =>  '1',
+                        'B'         =>  '3',
+                        'C'         =>  '4',
+                        'total'         =>  '620.00'
+                    ),
+                    array(
+                        'id'        =>  '14338',
+                        'number'    =>  '100008',
+                        'username'  =>  'helen001',
+                        'name'      =>  'Helen Swift',
+                        'email'     =>  'helen@test.com',
+                        'phone'     =>  '10003',
+                        'VVIP'      =>  '1',
+                        'VIP'       =>  '0',
+                        'Couple'    =>  '1',
+                        'A'         =>  '2',
+                        'B'         =>  '5',
+                        'C'         =>  '1',
+                        'total'         =>  '3300.00'
+                    )
                 );
                 
                 $data['header'] = $this->load->controller('common/header');

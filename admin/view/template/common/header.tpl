@@ -36,9 +36,6 @@
 <div id="container">
 <header id="header" class="navbar navbar-static-top">
   <div class="navbar-header">
-    <?php if ($logged) { ?>
-    <a type="button" id="button-menu" class="pull-left"><i class="fa fa-indent fa-lg"></i></a>
-    <?php } ?>
     <a href="<?php echo $home; ?>" class="navbar-brand">
         Ticket Management System
             <!--
