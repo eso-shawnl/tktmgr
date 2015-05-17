@@ -1,6 +1,6 @@
 <?php echo $header; ?>
 <div id="content">
-    <form class='form form-inline' action="./index.php?route=ticket/manager" method="POST" id='search-form' style="margin: 2em;">
+    <form class='form form-inline' action="<?php echo $search_url; ?>" method="POST" id='search-form' style="margin: 2em;">
         <div class="form-group">
             <label for="search">Search</label>
             <input type="text" id="search" name="search" class="form-control">
@@ -9,7 +9,7 @@
             <label for="location">Location</label>
             <select type="text" id="location" name="location" class="form-control">
                 <?php foreach ($locations as $location) { ?>
-                <option value='<?php echo $location; ?>'><?php echo $location ?></option>
+                <option value='<?php echo $location; ?>' <?php if($current_location == $location) echo 'selected' ?> ><?php echo $location ?></option>
                 <?php } ?>
             </select>
         </div>
@@ -74,7 +74,7 @@
 
                 if(confirm('Please confirm?')) {
                     $.ajax({
-                        url: './index.php?route=ticket/manager/setOrderPicked',
+                        url: '<?php echo $pick_url; ?>',
                         data: {id: _id},
                         method: 'POST',
                         datatype: 'json',

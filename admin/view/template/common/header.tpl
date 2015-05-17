@@ -44,7 +44,7 @@
     </a></div>
   <?php if ($logged) { ?>
   <ul class="nav pull-right">
-    <li>User: <span><?php echo $text_logged; ?></span></li>
+    <li style='line-height: 45px; margin-right: 10px;'>User: <span><?php echo $text_logged; ?></span></li>
       <!--
     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"><span class="label label-danger pull-left"><?php echo $alerts; ?></span> <i class="fa fa-bell fa-lg"></i></a>
       <ul class="dropdown-menu dropdown-menu-right alerts-dropdown">

@@ -16,12 +16,13 @@ class ControllerTicketManager extends Controller {
                     '2' => 'location_2',
                     '3' => 'location_3'
                 );
-                $current_location = $group_location_mapping[$user_group_id];
+                $user_location = $group_location_mapping[$user_group_id];
                 
-                $data['current_location'] = $current_location;
+                $data['$user_location'] = $user_location;
                 
                 // Check if there is specific location in post
-                $location = isset($this->request->post['location']) ? $this->request->post['location'] : $current_location;
+                $location = isset($this->request->post['location']) ? $this->request->post['location'] : $user_location;
+                $data['current_location'] = $location;
                 
                 //Otherwise we need to add user location in database
                 //$location = $this->user->location;
@@ -110,13 +111,13 @@ class ControllerTicketManager extends Controller {
                     '2' =>  'Unit 2, level 6, 220 Queen Street, Auckland City',
                     '3' =>  '6D, level 6, 300 Queen Street, Auckland City'
                 );
-                
+                $data['search_url'] =   $this->url->link('ticket/manager', 'token=' . $this->session->data['token'], 'SSL');
+                $data['pick_url']   =   $this->url->link('ticket/manager/setOrderPicked', 'token=' . $this->session->data['token'], 'SSL');
                 // Render with manager template
 		$this->response->setOutput($this->load->view('ticket/manager.tpl', $data));
 	}
         
         public function setOrderPicked() {
-            sleep(2000);
             if(isset($this->request->post['id'])){
                 $id = isset($this->request->post['id']);
                 $this->load->model('models/interface');
